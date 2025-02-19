@@ -98,8 +98,9 @@ h6,
 /*** Navbar ***/
 /* Navbar default - transparent background */
 .navbar {
-    background: transparent !important;
+    /* background: transparent !important; */
     transition: all 0.3s ease-in-out;
+    background-color: #022b60;
 }
 
 /* When sticky, keep the background transparent and add shadow */
@@ -118,7 +119,12 @@ h6,
 .sticky-top.navbar-light .navbar-brand img {
     max-height: 60px; /* Ensure the logo does not shrink */
 }
-
+.dropdown-menu{
+    background-color: #02387e;
+}
+.dropdown-item{
+    color: white;
+}
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f067";
@@ -156,7 +162,7 @@ h6,
 }
 
 .navbar-light .navbar-brand img {
-    max-height: 60px;
+    max-height: 70px;
     transition: .5s;
 }
 
@@ -179,7 +185,7 @@ h6,
     .sticky-top.navbar-light .navbar-nav .nav-link {
         padding: 10px 0;
         margin-left: 0;
-        color: var(--dark) !important;
+        /* color: var(--dark) !important; */
     }
 
     .navbar-light .navbar-brand h1 {

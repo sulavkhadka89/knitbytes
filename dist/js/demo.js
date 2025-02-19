@@ -421,13 +421,13 @@
   ]
 
   var sidebar_colors = [
-    'bg-primary',
+    'bg-custom',
     'bg-warning',
     'bg-info',
     'bg-danger',
     'bg-success',
     'bg-indigo',
-    'bg-lightblue',
+    'bg-whiteblue',
     'bg-navy',
     'bg-purple',
     'bg-fuchsia',

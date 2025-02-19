@@ -42,8 +42,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -76,7 +76,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
         <div class="container-fluid position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
-                <img src="<?php echo validate_image($_settings->info('logo')) ?>" alt="Logo" style="max-height: 140px; width: auto; object-fit: contain;">
+                <img src="<?php echo validate_image($_settings->info('logo')) ?>" alt="Logo" style=" max-width: 180px; width: auto; object-fit: contain;">
                     <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -102,7 +102,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
                 </div>
             </nav>
 
-            <div class="container-fluid py-5 bg-primary hero-header">
+            <div class="container-fluid py-5 bg-custom hero-header">
                 <div class="container my-5 py-5 px-lg-5">
                     <div class="row g-5 py-5">
                         <div class="col-12 text-center">
@@ -152,7 +152,7 @@ while ($row = $c_qry->fetch_assoc()) {
         
 
                <!-- Footer Start -->
-               <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
+               <div class="container-fluid bg-custom text-light footer wow fadeIn" data-wow-delay="0.1s">
             <div class="container py-5 px-lg-5">
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-3">

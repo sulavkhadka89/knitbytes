@@ -44,7 +44,9 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -63,7 +65,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 </head>
 
 <body>
-    <div class="container-fluid bg-white p-0">
+<div class="container-fluid bg-white p-0">
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
@@ -76,16 +78,9 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
         <!-- Navbar & Hero Start -->
         <div class="container-fluid position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-            <a href="" class="navbar-brand p-0">
-    <img src="<?php echo validate_image($_settings->info('logo')) ?>" alt="Logo" style="max-height: 140px; width: auto; object-fit: contain;">
-</a>
-
-
-
-
-
-
-</a>
+            <a href="" class="navbar-brand p-1">
+            <img src="<?php echo validate_image($_settings->info('logo')) ?>" alt="Logo" style=" max-width: 200px; width: auto; object-fit: contain;">
+            </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
@@ -121,7 +116,9 @@ while ($row = $c_qry->fetch_assoc()) {
     $contact[$row['meta_field']] = $row['meta_value'];
 }
 ?>
-<div class="container-fluid bg-primary hero-header h-100">
+</div>
+
+<div class="container-fluid bg-custom hero-header h-100">
     <div class="container-fluid px-lg-5">
         <div class="row g-5 align-items-center">
             <div class="col-lg-6 text-center text-lg-start">
@@ -150,7 +147,7 @@ while ($row = $c_qry->fetch_assoc()) {
                 while($row = $e_qry->fetch_assoc()):
             ?>
             <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="feature-item bg-light rounded text-center p-4">
+                <div class="feature-item bg-white rounded text-center p-4">
                     <!-- Dynamically fetch and display the icon or image -->
                     <img src="<?php echo validate_image($row['file_path']) ?>" alt="<?php echo $row['title'] ?>" class="img-fluid mb-4" style="width: 80px; height: 80px;">
                     
@@ -180,7 +177,7 @@ while ($row = $c_qry->fetch_assoc()) {
                                 <p class="mb-2">85%</p>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-custom" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                         <div class="skill mb-4">
@@ -213,7 +210,7 @@ while ($row = $c_qry->fetch_assoc()) {
 
 
         <!-- Facts Start -->
-        <div class="container-fluid bg-primary fact py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container-fluid bg-custom fact py-5 wow fadeInUp" data-wow-delay="0.1s">
             <div class="container-fluid py-5 px-lg-5">
                 <div class="row g-4">
                     <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
@@ -317,7 +314,7 @@ while ($row = $c_qry->fetch_assoc()) {
 
 
         <!-- Newsletter Start -->
-        <div class="container-fluid bg-primary newsletter py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container-fluid bg-custom newsletter py-5 wow fadeInUp" data-wow-delay="0.1s">
     <div class="container-fluid py-5 px-lg-5">
         <div class="row justify-content-center">
             <div class="col-lg-7 text-center">
@@ -377,7 +374,7 @@ while ($row = $c_qry->fetch_assoc()) {
                                     <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
                                 </div>
                             </div>
-                            <div class="bg-light p-4">
+                            <div class="bg-white p-4">
                                 <p class="text-primary fw-medium mb-2">UI / UX Design</p>
                                 <h5 class="lh-base mb-0">Different Website Design And Development</a>
                             </div>
@@ -392,7 +389,7 @@ while ($row = $c_qry->fetch_assoc()) {
                                     <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
                                 </div>
                             </div>
-                            <div class="bg-light p-4">
+                            <div class="bg-white p-4">
                                 <p class="text-primary fw-medium mb-2">UI / UX Design</p>
                                 <h5 class="lh-base mb-0">Different Website Design And Development</a>
                             </div>
@@ -407,7 +404,7 @@ while ($row = $c_qry->fetch_assoc()) {
                                     <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
                                 </div>
                             </div>
-                            <div class="bg-light p-4">
+                            <div class="bg-white p-4">
                                 <p class="text-primary fw-medium mb-2">UI / UX Design</p>
                                 <h5 class="lh-base mb-0">Different Website Design And Development</a>
                             </div>
@@ -422,7 +419,7 @@ while ($row = $c_qry->fetch_assoc()) {
                                     <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
                                 </div>
                             </div>
-                            <div class="bg-light p-4">
+                            <div class="bg-white p-4">
                                 <p class="text-primary fw-medium mb-2">UI / UX Design</p>
                                 <h5 class="lh-base mb-0">Different Website Design And Development</a>
                             </div>
@@ -437,7 +434,7 @@ while ($row = $c_qry->fetch_assoc()) {
                                     <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
                                 </div>
                             </div>
-                            <div class="bg-light p-4">
+                            <div class="bg-white p-4">
                                 <p class="text-primary fw-medium mb-2">UI / UX Design</p>
                                 <h5 class="lh-base mb-0">Different Website Design And Development</a>
                             </div>
@@ -452,7 +449,7 @@ while ($row = $c_qry->fetch_assoc()) {
                                     <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
                                 </div>
                             </div>
-                            <div class="bg-light p-4">
+                            <div class="bg-white p-4">
                                 <p class="text-primary fw-medium mb-2">UI / UX Design</p>
                                 <h5 class="lh-base mb-0">Different Website Design And Development</a>
                             </div>
@@ -476,7 +473,7 @@ while ($row = $c_qry->fetch_assoc()) {
                 while($row = $qry->fetch_assoc()):
                     $row['message'] = html_entity_decode($row['message']);
             ?>
-            <div class="testimonial-item bg-light rounded my-4">
+            <div class="testimonial-item bg-white rounded my-4">
                 <p class="fs-5">
                     <i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>
                     <?php echo $row['message']; ?>
@@ -511,7 +508,7 @@ while ($row = $c_qry->fetch_assoc()) {
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="team-item bg-light rounded">
+                        <div class="team-item bg-white rounded">
                             <div class="text-center border-bottom p-4">
                                 <img class="img-fluid rounded-circle mb-4" src="img/team-1.jpg" alt="">
                                 <h5>John Doe</h5>
@@ -526,7 +523,7 @@ while ($row = $c_qry->fetch_assoc()) {
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-item bg-light rounded">
+                        <div class="team-item bg-white rounded">
                             <div class="text-center border-bottom p-4">
                                 <img class="img-fluid rounded-circle mb-4" src="img/team-2.jpg" alt="">
                                 <h5>Jessica Brown</h5>
@@ -541,7 +538,7 @@ while ($row = $c_qry->fetch_assoc()) {
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="team-item bg-light rounded">
+                        <div class="team-item bg-white rounded">
                             <div class="text-center border-bottom p-4">
                                 <img class="img-fluid rounded-circle mb-4" src="img/team-3.jpg" alt="">
                                 <h5>Tony Johnson</h5>
@@ -562,7 +559,7 @@ while ($row = $c_qry->fetch_assoc()) {
         
 
         <!-- Footer Start -->
-        <div class="container-fluid-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
+        <div class="container-fluid-fluid bg-custom text-light footer wow fadeIn" data-wow-delay="0.1s">
             <div class="container-fluid py-5 px-lg-5">
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-3">

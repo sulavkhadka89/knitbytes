@@ -44,8 +44,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -78,7 +78,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
         <div class="container-fluid position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
             <a href="" class="navbar-brand p-0">
-    <img src="<?php echo validate_image($_settings->info('logo')) ?>" alt="Logo" style="max-height: 140px; width: auto; object-fit: contain;">
+    <img src="<?php echo validate_image($_settings->info('logo')) ?>" alt="Logo" style=" max-width: 180px; width: auto; object-fit: contain;">
 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
@@ -115,7 +115,7 @@ while ($row = $c_qry->fetch_assoc()) {
 }
 ?>
   
-            <div class="container-fluid py-5 bg-primary hero-header">
+            <div class="container-fluid py-5 bg-custom hero-header">
                 <div class="container my-5 py-5 px-lg-5">
                     <div class="row g-5 py-5">
                         <div class="col-12 text-center">
@@ -141,21 +141,21 @@ while ($row = $c_qry->fetch_assoc()) {
             <div class="container py-5 px-lg-5">
                 <div class="row g-4">
                     <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="feature-item bg-light rounded text-center p-4">
+                        <div class="feature-item bg-white rounded text-center p-4">
                             <i class="fa fa-3x fa-mail-bulk text-primary mb-4"></i>
                             <h5 class="mb-3">Digital Marketing</h5>
                             <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="feature-item bg-light rounded text-center p-4">
+                        <div class="feature-item bg-white rounded text-center p-4">
                             <i class="fa fa-3x fa-search text-primary mb-4"></i>
                             <h5 class="mb-3">SEO & Backlinks</h5>
                             <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="feature-item bg-light rounded text-center p-4">
+                        <div class="feature-item bg-white rounded text-center p-4">
                             <i class="fa fa-3x fa-laptop-code text-primary mb-4"></i>
                             <h5 class="mb-3">Design & Development</h5>
                             <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
@@ -181,7 +181,7 @@ while ($row = $c_qry->fetch_assoc()) {
                                 <p class="mb-2">85%</p>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-custom" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                         <div class="skill mb-4">
@@ -214,7 +214,7 @@ while ($row = $c_qry->fetch_assoc()) {
 
 
         <!-- Facts Start -->
-        <div class="container-fluid bg-primary fact py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container-fluid bg-custom fact py-5 wow fadeInUp" data-wow-delay="0.1s">
             <div class="container py-5 px-lg-5">
                 <div class="row g-4">
                     <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
@@ -252,7 +252,7 @@ while ($row = $c_qry->fetch_assoc()) {
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="team-item bg-light rounded">
+                        <div class="team-item bg-white rounded">
                             <div class="text-center border-bottom p-4">
                                 <img class="img-fluid rounded-circle mb-4" src="img/team-1.jpg" alt="">
                                 <h5>John Doe</h5>
@@ -267,7 +267,7 @@ while ($row = $c_qry->fetch_assoc()) {
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-item bg-light rounded">
+                        <div class="team-item bg-white rounded">
                             <div class="text-center border-bottom p-4">
                                 <img class="img-fluid rounded-circle mb-4" src="img/team-2.jpg" alt="">
                                 <h5>Jessica Brown</h5>
@@ -282,7 +282,7 @@ while ($row = $c_qry->fetch_assoc()) {
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="team-item bg-light rounded">
+                        <div class="team-item bg-white rounded">
                             <div class="text-center border-bottom p-4">
                                 <img class="img-fluid rounded-circle mb-4" src="img/team-3.jpg" alt="">
                                 <h5>Tony Johnson</h5>
@@ -372,7 +372,7 @@ while ($row = $c_qry->fetch_assoc()) {
         </div>
 
         <!-- Footer Start -->
-        <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
+        <div class="container-fluid bg-custom text-light footer wow fadeIn" data-wow-delay="0.1s">
             <div class="container py-5 px-lg-5">
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-3">

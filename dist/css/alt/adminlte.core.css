@@ -6746,13 +6746,13 @@ a.close.disabled {
   vertical-align: text-top !important;
 }
 
-.bg-primary {
+.bg-custom {
   background-color: #007bff !important;
 }
 
-a.bg-primary:hover, a.bg-primary:focus,
-button.bg-primary:hover,
-button.bg-primary:focus {
+a.bg-custom:hover, a.bg-custom:focus,
+button.bg-custom:hover,
+button.bg-custom:focus {
   background-color: #0062cc !important;
 }
 
@@ -6806,13 +6806,13 @@ button.bg-danger:focus {
   background-color: #bd2130 !important;
 }
 
-.bg-light {
+.bg-white {
   background-color: #f8f9fa !important;
 }
 
-a.bg-light:hover, a.bg-light:focus,
-button.bg-light:hover,
-button.bg-light:focus {
+a.bg-white:hover, a.bg-white:focus,
+button.bg-white:hover,
+button.bg-white:focus {
   background-color: #dae0e5 !important;
 }
 
@@ -15262,21 +15262,21 @@ blockquote.quote-gray-dark h6 {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22) !important;
 }
 
-.bg-primary {
+.bg-custom {
   background-color: #007bff !important;
 }
 
-.bg-primary,
-.bg-primary > a {
+.bg-custom,
+.bg-custom > a {
   color: #fff !important;
 }
 
-.bg-primary.btn:hover {
+.bg-custom.btn:hover {
   border-color: #0062cc;
   color: #ececec;
 }
 
-.bg-primary.btn:not(:disabled):not(.disabled):active, .bg-primary.btn:not(:disabled):not(.disabled).active, .bg-primary.btn:active, .bg-primary.btn.active {
+.bg-custom.btn:not(:disabled):not(.disabled):active, .bg-custom.btn:not(:disabled):not(.disabled).active, .bg-custom.btn:active, .bg-custom.btn.active {
   background-color: #0062cc !important;
   border-color: #005cbf;
   color: #fff;
@@ -15382,21 +15382,21 @@ blockquote.quote-gray-dark h6 {
   color: #fff;
 }
 
-.bg-light {
+.bg-white {
   background-color: #f8f9fa !important;
 }
 
-.bg-light,
-.bg-light > a {
+.bg-white,
+.bg-white > a {
   color: #1f2d3d !important;
 }
 
-.bg-light.btn:hover {
+.bg-white.btn:hover {
   border-color: #dae0e5;
   color: #121a24;
 }
 
-.bg-light.btn:not(:disabled):not(.disabled):active, .bg-light.btn:not(:disabled):not(.disabled).active, .bg-light.btn:active, .bg-light.btn.active {
+.bg-white.btn:not(:disabled):not(.disabled):active, .bg-white.btn:not(:disabled):not(.disabled).active, .bg-white.btn:active, .bg-white.btn.active {
   background-color: #dae0e5 !important;
   border-color: #d3d9df;
   color: #1f2d3d;
@@ -15422,21 +15422,21 @@ blockquote.quote-gray-dark h6 {
   color: #fff;
 }
 
-.bg-lightblue {
+.bg-whiteblue {
   background-color: #3c8dbc !important;
 }
 
-.bg-lightblue,
-.bg-lightblue > a {
+.bg-whiteblue,
+.bg-whiteblue > a {
   color: #fff !important;
 }
 
-.bg-lightblue.btn:hover {
+.bg-whiteblue.btn:hover {
   border-color: #307095;
   color: #ececec;
 }
 
-.bg-lightblue.btn:not(:disabled):not(.disabled):active, .bg-lightblue.btn:not(:disabled):not(.disabled).active, .bg-lightblue.btn:active, .bg-lightblue.btn.active {
+.bg-whiteblue.btn:not(:disabled):not(.disabled):active, .bg-whiteblue.btn:not(:disabled):not(.disabled).active, .bg-whiteblue.btn:active, .bg-whiteblue.btn.active {
   background-color: #307095 !important;
   border-color: #2d698c;
   color: #fff;
@@ -18335,7 +18335,7 @@ a.text-muted:hover {
   color: #fff;
 }
 
-.dark-mode .bg-light {
+.dark-mode .bg-white {
   background-color: #454d55 !important;
   color: #fff !important;
 }

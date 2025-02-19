@@ -200,12 +200,12 @@
   white-space: nowrap;
 }
 
-.info-box .info-box .bg-primary,
+.info-box .info-box .bg-custom,
 .info-box .info-box .bg-gradient-primary {
   color: #fff;
 }
 
-.info-box .info-box .bg-primary .progress-bar,
+.info-box .info-box .bg-custom .progress-bar,
 .info-box .info-box .bg-gradient-primary .progress-bar {
   background-color: #fff;
 }
@@ -260,12 +260,12 @@
   background-color: #fff;
 }
 
-.info-box .info-box .bg-light,
+.info-box .info-box .bg-white,
 .info-box .info-box .bg-gradient-light {
   color: #1f2d3d;
 }
 
-.info-box .info-box .bg-light .progress-bar,
+.info-box .info-box .bg-white .progress-bar,
 .info-box .info-box .bg-gradient-light .progress-bar {
   background-color: #1f2d3d;
 }
