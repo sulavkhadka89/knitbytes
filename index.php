@@ -143,7 +143,7 @@ while ($row = $c_qry->fetch_assoc()) {
         <div class="row g-4">
             <?php 
                 // Fetch services from the database
-                $e_qry = $conn->query("SELECT * FROM services ORDER BY title ASC");
+                $e_qry = $conn->query("SELECT * FROM services ORDER BY title DESC");
                 while($row = $e_qry->fetch_assoc()):
             ?>
             <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
@@ -348,8 +348,8 @@ while ($row = $c_qry->fetch_assoc()) {
         <!-- Newsletter End -->
 
 
-        <!-- Projects Start -->
-        <div class="container py-5">
+       
+        <!-- <div class="container py-5">
             <div class="container-fluid py-5 px-lg-5">
                 <div class="wow fadeInUp" data-wow-delay="0.1s">
                     <p class="section-title text-secondary justify-content-center"><span></span>Our Projects<span></span></p>
@@ -458,7 +458,7 @@ while ($row = $c_qry->fetch_assoc()) {
                 </div>
             </div>
         </div>
-        <!-- Projects End -->
+         -->
 
 
       <!-- Testimonial Start -->
