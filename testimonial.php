@@ -41,6 +41,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,9 +62,70 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    
 </head>
 
 <body>
+<style>
+    .slick-prev, .slick-next {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+/* Adjust Left Arrow */
+.slick-prev {
+    left: -50px;  /* Move further left */
+}
+
+/* Adjust Right Arrow */
+.slick-next {
+    right: -50px;  /* Move further right */
+}
+
+/* On Hover, Change Color */
+.slick-prev:hover, .slick-next:hover {
+    color: #000;
+}
+.slick-dots {
+    position: absolute;
+    bottom: -30px; /* Adjust distance below content */
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+    display: flex;
+    gap: 10px; /* Space between dots */
+}
+.slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.slick-dots li button {
+    font-size: 0; /* Hide default text */
+    width: 12px;
+    height: 12px;
+    background-color: #ccc; /* Inactive dot color */
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #ff6600; /* Active dot color */
+    width: 14px;
+    height: 14px;
+}
+</style>
     <div class="container-fluid bg-white p-0">
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -179,7 +241,7 @@ while ($row = $c_qry->fetch_assoc()) {
                     <p class="section-title text-secondary justify-content-center"><span></span>Our Projects<span></span></p>
                     <h1 class="text-center mb-5">Recently Completed Projects</h1>
                 </div>
-                <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
+                <!-- <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="col-12 text-center">
                         <ul class="list-inline mb-5" id="portfolio-flters">
                             <li class="mx-2 active" data-filter="*">All</li>
@@ -187,9 +249,9 @@ while ($row = $c_qry->fetch_assoc()) {
                             <li class="mx-2" data-filter=".second">Graphic Design</li>
                         </ul>
                     </div>
-                </div>
-                <div class="row g-4 portfolio-container-fluid">
-                    <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
+                </div> -->
+                <div class="g-4 testimonial-carousel your-class">
+                    <div class="p-2 col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
                         <div class="rounded overflow-hidden">
                             <div class="position-relative overflow-hidden">
                                 <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
@@ -204,7 +266,7 @@ while ($row = $c_qry->fetch_assoc()) {
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="p-2 col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
                         <div class="rounded overflow-hidden">
                             <div class="position-relative overflow-hidden">
                                 <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
@@ -219,7 +281,7 @@ while ($row = $c_qry->fetch_assoc()) {
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="p-2 col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
                         <div class="rounded overflow-hidden">
                             <div class="position-relative overflow-hidden">
                                 <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="">
@@ -234,7 +296,7 @@ while ($row = $c_qry->fetch_assoc()) {
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="p-2 col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
                         <div class="rounded overflow-hidden">
                             <div class="position-relative overflow-hidden">
                                 <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="">
@@ -249,7 +311,7 @@ while ($row = $c_qry->fetch_assoc()) {
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="p-2 col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
                         <div class="rounded overflow-hidden">
                             <div class="position-relative overflow-hidden">
                                 <img class="img-fluid w-100" src="img/portfolio-5.jpg" alt="">
@@ -264,7 +326,7 @@ while ($row = $c_qry->fetch_assoc()) {
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="p-2 col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
                         <div class="rounded overflow-hidden">
                             <div class="position-relative overflow-hidden">
                                 <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="">
@@ -373,7 +435,6 @@ while ($row = $c_qry->fetch_assoc()) {
     </div>
 
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
@@ -385,6 +446,44 @@ while ($row = $c_qry->fetch_assoc()) {
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+    $(document).ready(function(){
+      $('.your-class').slick({
+        speed: 300,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        dots: true,
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+        nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+        responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }]
+      });
+    });
+</script>
 </body>
 
 </html>
